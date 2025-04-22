@@ -9788,5 +9788,26 @@ textarea.form-control {
   animation: spin 0.5s linear;
 }
 
+@keyframes moveUpDown {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
 
-  
+/* Target the first certificate card inside .row */
+.row .certificate-card:nth-child(1) {
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+
+.certificate-card {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: visible !important;
+}
