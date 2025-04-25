@@ -52,3 +52,8 @@ $(document).ready(function () {
       mouseDrag: true,
     });
   });
+
+
+  document.addEventListener('touchmove', function(e) {
+    e.stopPropagation();
+  }, { passive: true });

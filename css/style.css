@@ -10024,3 +10024,8 @@ textarea.form-control {
     width: 120px;
   }
 }
+
+
+#home-section, .slider-item, .container-fluid {
+  overflow: visible !important;
+}
