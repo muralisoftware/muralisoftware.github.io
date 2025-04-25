@@ -10026,8 +10026,26 @@ textarea.form-control {
 }
 
 
+.owl-carousel.home-slider .slider-item {
+  touch-action: pan-y;
+}
 
-.overlay,
-.overlay-1 {
-  pointer-events: none; /* allows touch to pass through */
+.owl-carousel.home-slider .slider-item {
+  touch-action: auto;
+}
+
+
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.7;
+  animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 10px); }
 }
