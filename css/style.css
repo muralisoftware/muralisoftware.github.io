@@ -10025,7 +10025,18 @@ textarea.form-control {
   }
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
 
-#home-section, .slider-item, .container-fluid {
-  overflow: visible !important;
+.hero {
+  position: relative;
+}
+
+.owl-carousel {
+  touch-action: pan-y;
 }
