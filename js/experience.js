@@ -41,19 +41,16 @@ function sendMessage() {
 }
 
 
-$(document).ready(function () {
-    $(".home-slider").owlCarousel({
-      items: 1,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 5000,
-      dots: true,
-      touchDrag: true,
-      mouseDrag: true,
+$(document).ready(function(){
+    $('.home-slider').owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 1000,
+        nav: true,
+        dots: true,
+        touchDrag: true,
+        mouseDrag: true,
     });
-  });
-
-
-  document.addEventListener('touchmove', function(e) {
-    e.stopPropagation();
-  }, { passive: true });
+});

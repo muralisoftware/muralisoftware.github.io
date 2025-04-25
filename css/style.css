@@ -10024,19 +10024,3 @@ textarea.form-control {
     width: 120px;
   }
 }
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-  }
-
-.hero {
-  position: relative;
-}
-
-.owl-carousel {
-  touch-action: pan-y;
-}
