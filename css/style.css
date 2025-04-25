@@ -10024,3 +10024,10 @@ textarea.form-control {
     width: 120px;
   }
 }
+
+
+
+.overlay,
+.overlay-1 {
+  pointer-events: none; /* allows touch to pass through */
+}
