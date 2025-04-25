@@ -10062,3 +10062,11 @@ textarea.form-control {
     overscroll-behavior: none;
   }
 }
+
+
+@media (max-width: 767.98px) {
+  .home-slider-block {
+    touch-action: pan-x;
+    overflow: hidden;
+  }
+}
