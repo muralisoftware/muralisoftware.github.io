@@ -10072,6 +10072,15 @@ textarea.form-control {
   }
 }
 
-body {
-  overflow-y: scroll !important;
+
+.img {
+  touch-action: auto;         /* Allow scroll gestures */
+  pointer-events: none;       /* Let touches pass through */
+  overflow: visible;          /* Prevent hidden scroll */
+  min-height: 100vh;          /* Let content grow */
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
