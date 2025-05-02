@@ -5087,7 +5087,7 @@ a.close.disabled {
 .carousel {
   position: relative; }
 
-.carousel.pointer-event {
+.carousel.pointer-event.img .slider-item.home-slider{
   -ms-touch-action: pan-y;
   touch-action: pan-y; }
 
@@ -8499,6 +8499,7 @@ h1, h2, h3, h4, h5,
           @media (min-width: 768px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-forth {
               position: absolute;
+              touch-action: pan-y;
               top: 0;
               left: 0;
               bottom: 0;
@@ -8553,7 +8554,7 @@ h1, h2, h3, h4, h5,
               font-size: 50px; } }
           @media (max-width: 767.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h1 {
-              font-size: 40px; } }
+              font-size: 40px; touch-action: pan-y;} }
         .owl-carousel.home-slider .slider-item .slider-text h2 {
           font-size: 30px;
           font-weight: 400; }
