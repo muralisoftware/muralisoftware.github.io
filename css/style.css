@@ -10071,3 +10071,7 @@ textarea.form-control {
     overflow-y: auto;
   }
 }
+
+body {
+  overflow-y: scroll !important;
+}
