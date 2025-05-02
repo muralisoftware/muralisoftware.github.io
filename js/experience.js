@@ -54,3 +54,9 @@ $(document).ready(function(){
         mouseDrag: true,
     });
 });
+
+
+$('.owl-carousel').owlCarousel({
+	touchDrag: false, // <- don't disable this unless you need to
+  });
+  

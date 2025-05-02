@@ -10064,9 +10064,10 @@ textarea.form-control {
 }
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 320px) {
   .home-slider-block {
-    touch-action: pan-x;
-    overflow: hidden;
+    touch-action: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }
