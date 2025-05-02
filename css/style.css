@@ -10064,23 +10064,41 @@ textarea.form-control {
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 767.98px) {
   .home-slider-block {
-    touch-action: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
+    touch-action: pan-x;
+    overflow: hidden;
   }
 }
 
+/* update for css in mobile view page scrolling issue */
 
-.img {
-  touch-action: auto;         /* Allow scroll gestures */
-  pointer-events: none;       /* Let touches pass through */
-  overflow: visible;          /* Prevent hidden scroll */
-  min-height: 100vh;          /* Let content grow */
+.owl-carousel {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
 }
 
-html, body {
+.owl-carousel,
+.home-slider {
+  touch-action: auto !important;
+  -ms-touch-action: auto !important;
   overflow-x: hidden;
   overflow-y: auto;
+}
+.img {
+  pointer-events: none;
+  touch-action: auto;
+}
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .home-slider,
+  .slider-item,
+  .img {
+    overflow-x: hidden;
+    touch-action: auto;
+  }
 }
