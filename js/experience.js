@@ -47,12 +47,12 @@ $(document).ready(function(){
         loop: true,
         autoplay: true,
         autoplayTimeout: 5000,
-        smartSpeed: 1000,
-        nav: true,
+        smartSpeed: 800,
+        nav: false,
         dots: true,
         touchDrag: true,
-        mouseDrag: true,
-    });
+        mouseDrag: true
+      });
 });
 
 

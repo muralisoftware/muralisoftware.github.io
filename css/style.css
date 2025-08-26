@@ -5088,8 +5088,8 @@ a.close.disabled {
   position: relative; }
 
 .carousel.pointer-event.img .slider-item.home-slider{
-  -ms-touch-action: pan-y;
-  touch-action: pan-y; }
+  -ms-touch-action: auto;
+  touch-action: auto; }
 
 .carousel-inner {
   position: relative;
@@ -8436,7 +8436,7 @@ h1, h2, h3, h4, h5,
       background-position: center center;
       height: 750px;
       position: relative;
-      touch-action: pan-y;
+      touch-action: auto;
       z-index: 0; }
       @media (max-width: 1199.98px) {
         .owl-carousel.home-slider .slider-item {
@@ -8499,7 +8499,7 @@ h1, h2, h3, h4, h5,
           @media (min-width: 768px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-forth {
               position: absolute;
-              touch-action: pan-y;
+              touch-action: auto;
               top: 0;
               left: 0;
               bottom: 0;
@@ -8554,7 +8554,7 @@ h1, h2, h3, h4, h5,
               font-size: 50px; } }
           @media (max-width: 767.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h1 {
-              font-size: 40px; touch-action: pan-y;} }
+              font-size: 40px; touch-action: auto;} }
         .owl-carousel.home-slider .slider-item .slider-text h2 {
           font-size: 30px;
           font-weight: 400; }
@@ -10025,81 +10025,17 @@ textarea.form-control {
     width: 120px;
   }
 }
-
-
-.owl-carousel.home-slider .slider-item {
+.owl-carousel {
+  position: relative;
   touch-action: pan-y;
 }
-
-.owl-carousel.home-slider .slider-item {
-  touch-action: auto;
-}
-
-
-.scroll-down-indicator {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-  color: #fff;
-  opacity: 0.7;
-  animation: bounce 1.5s infinite;
-}
-@keyframes bounce {
-  0%, 100% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, 10px); }
-}
-
-
-.owl-carousel.home-slider .slider-item {
-  touch-action: pan-x;
-  overscroll-behavior: none;
-}
-
-@media (max-width: 767.98px) {
-  .owl-carousel.home-slider .slider-item {
-    touch-action: pan-x;
-    overscroll-behavior: none;
-  }
-}
-
-
-@media (max-width: 767.98px) {
-  .home-slider-block {
-    touch-action: pan-x;
-    overflow: hidden;
-  }
-}
-
-/* update for css in mobile view page scrolling issue */
-
 .owl-carousel {
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-x;
+  position: relative;
+  touch-action: auto; /* allows both swipe and scroll */
+  overscroll-behavior: contain; /* optional: avoids scroll chaining */
 }
-
-.owl-carousel,
-.home-slider {
-  touch-action: auto !important;
-  -ms-touch-action: auto !important;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.img {
-  pointer-events: none;
-  touch-action: auto;
-}
-body {
-  overflow-x: hidden;
-}
-
-@media (max-width: 767.98px) {
-  .home-slider,
-  .slider-item,
-  .img {
-    overflow-x: hidden;
-    touch-action: auto;
+@media (max-width: 991.98px) {
+  .owl-carousel.home-slider .slider-item {
+    height: auto !important;
   }
 }
