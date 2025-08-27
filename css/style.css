@@ -8181,13 +8181,13 @@ h1, h2, h3, h4, h5,
       padding-left: 15px;
       padding-right: 15px; } }
   .ftco-navbar-light .navbar-brand {
-    color: #000000;
+    color: #f0f0f0;
     padding-top: .7rem;
     padding-bottom: .7rem; }
     .ftco-navbar-light .navbar-brand span {
-      color: #000000; }
+      color: #f0f0f0; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
-      color: #000000 !important; }
+      color: #f0f0f0 !important; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-brand {
         color: #fff; } }
@@ -10038,4 +10038,35 @@ textarea.form-control {
   .owl-carousel.home-slider .slider-item {
     height: auto !important;
   }
+}
+
+/* Floating gradient blobs */
+.floating-bg {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top left, #fdd835, transparent);
+  top: 20%;
+  left: 10%;
+  filter: blur(80px);
+  animation: float 10s ease-in-out infinite;
+  z-index: 0;
+}
+
+.floating-bg.delay {
+  top: 65%;
+  left: 70%;
+  background: radial-gradient(circle at top right, #00e5ff, transparent);
+  animation-delay: 5s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-40px) translateX(30px); }
+}
+
+@keyframes floatHero {
+  0%, 100% { transform: translateY(0) rotateX(0) rotateY(0); }
+  50% { transform: translateY(-15px) rotateX(3deg) rotateY(-3deg); }
 }
